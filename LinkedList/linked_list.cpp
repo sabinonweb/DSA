@@ -132,9 +132,10 @@ bool LinkedList::remove(int data) {
   delete node;
   std::cout << "Removed" << std::endl;
   return true;
+  }
+  return false;
 }
-return false;
-}
+
 bool LinkedList::search(int data) {
   Node *temp = this->HEAD;
   while(temp->next != nullptr) {
