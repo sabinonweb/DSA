@@ -1,5 +1,3 @@
-#include "queue.h"
-
 class ArrayQueue {
   private:
     int *queue;
