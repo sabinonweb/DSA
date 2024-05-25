@@ -1,7 +1,9 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 
-class ArrayStack {
+#include "stack.h"
+
+class ArrayStack : public Stack {
   private: 
     int maxSize;
     int front;
