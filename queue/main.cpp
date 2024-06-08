@@ -17,7 +17,7 @@ int main() {
     // std::cout << "Dequeued: " << a.dequeue() << std::endl;
     // std::cout << "Front: " << a.front_element() << std::endl;
     // std::cout << "Rear: " << a.rear_element() << std::endl;
-    //
+
     LinkedListQueue l(6);
     std::cout << "is_empty: " << l.is_empty() << std::endl;
     l.enqueue(7);

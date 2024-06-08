@@ -1,6 +1,10 @@
-#include "../LinkedList/linked_list.h"
+#ifndef LINKED_LIST_QUEUE_H
+#define LINKED_LIST_QUEUE_H
 
-class LinkedListQueue {
+#include "../LinkedList/linked_list.h"
+#include "queue.h"
+
+class LinkedListQueue : public Queue {
   private:
     LinkedList l;
 
@@ -14,3 +18,5 @@ class LinkedListQueue {
     int rear_element();
     bool is_empty();
 };
+
+#endif

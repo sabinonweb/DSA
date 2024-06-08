@@ -1,3 +1,5 @@
+#include <iostream>
+
 class Node {
   public:
     int info;
@@ -15,13 +17,15 @@ class LinkedList {
     Node * TAIL;
     LinkedList();
     ~LinkedList();
-
+    
+    int get_head();
+    int get_tail();
     bool isEmpty();
     void addToHead(int data);
     void addToTail(int data);
     void add(int data, Node * predecessor);
     void traverse();
-    bool removeFromHead();
+    int removeFromHead();
     bool removeFromTail();
     bool remove(int data);
     bool search(int data);

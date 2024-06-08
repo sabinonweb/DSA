@@ -1,4 +1,9 @@
-class ArrayQueue {
+#ifndef ARRAY_H
+#define ARRAY_H
+
+#include "queue.h"
+
+class ArrayQueue : public Queue {
   private:
     int *queue;
     int front;
@@ -15,5 +20,6 @@ class ArrayQueue {
     int rear_element();
     bool is_empty();
     bool is_full();
-
 };  
+
+#endif

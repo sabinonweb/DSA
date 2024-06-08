@@ -1,3 +1,6 @@
+#ifndef QUEUE_H
+#define QUEUE_H
+
 class Queue {
   public:
     Queue() {};
@@ -7,5 +10,6 @@ class Queue {
     virtual int front_element() = 0;
     virtual int rear_element() = 0;
     virtual bool is_empty() = 0;
-    virtual bool is_full() = 0;
 };
+
+#endif

@@ -15,6 +15,14 @@ LinkedList::~LinkedList() {
   }
 }
 
+int LinkedList::get_head() {
+  return this->HEAD->info;
+}
+
+int LinkedList::get_tail() {
+  return this->TAIL->info;
+}
+
 bool LinkedList::isEmpty() {
   return (this->HEAD == nullptr && this->TAIL == nullptr);
 }
@@ -73,16 +81,19 @@ void LinkedList::traverse() {
   }
 }
 
-bool LinkedList::removeFromHead() {
+int LinkedList::removeFromHead() {
+  int r = 0;
   if (this->isEmpty()) {
     std::cout << "Nothing to be removed!\n";
-    return false;
+    return 0;
   } else {
+    // std::cout << "To be removed: " << this->HEAD->info << std::endl;
     Node *nodeToBeRemoved = this->HEAD;
     this->HEAD = nodeToBeRemoved->next;
+    r = nodeToBeRemoved->info;
     delete nodeToBeRemoved;
-    std::cout << "removedFromHead" << std::endl;
-    return true;
+    // std::cout << "removedFromHead" << std::endl;
+    return r;
   }
 }
 
