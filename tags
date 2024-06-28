@@ -78,7 +78,7 @@ ARRAY_H	queue/array.h	/^#define ARRAY_H$/;"	d
 ARRAY_H	stack/array.h	/^#define ARRAY_H$/;"	d
 ArrayQueue	queue/array.cpp	/^ArrayQueue::ArrayQueue(int maxSize) {$/;"	f	class:ArrayQueue
 ArrayQueue	queue/array.h	/^class ArrayQueue : public Queue {$/;"	c
-ArrayStack	LabExam/stack/array.h	/^class ArrayStack {$/;"	c
+ArrayStack	LabExam/stack/include/array.h	/^class ArrayStack {$/;"	c
 ArrayStack	LabExam/stack/src/array.cc	/^ArrayStack::ArrayStack(int maxSize) {$/;"	f	class:ArrayStack
 ArrayStack	stack/array.cpp	/^ArrayStack::ArrayStack(int maxSize) {$/;"	f	class:ArrayStack
 ArrayStack	stack/array.h	/^class ArrayStack : public Stack {$/;"	c
@@ -86,41 +86,63 @@ BST	bst/bst.cc	/^    BST() {}$/;"	f	class:BST	file:
 BST	bst/bst.cc	/^    BST(int data) : data(data), leftChild(nullptr), rightChild(nullptr) {}$/;"	f	class:BST	file:
 BST	bst/bst.cc	/^class BST {$/;"	c	file:
 DSA	README.md	/^# DSA$/;"	c
+HEAD	LabExam/LinkedList/include/linked_list.h	/^  Node * HEAD;$/;"	m	class:List	typeref:typename:Node *
 HEAD	LinkedList/linked_list.h	/^    Node * HEAD;$/;"	m	class:LinkedList	typeref:typename:Node *
 LINKED_LIST_QUEUE_H	queue/linked_list_queue.h	/^#define LINKED_LIST_QUEUE_H$/;"	d
 LINKED_LIST_STACK_H	stack/linked_list_stack.h	/^#define LINKED_LIST_STACK_H$/;"	d
 LinkedList	LinkedList/linked_list.cpp	/^LinkedList::LinkedList() {$/;"	f	class:LinkedList
 LinkedList	LinkedList/linked_list.h	/^class LinkedList {$/;"	c
+LinkedListQueue	LabExam/queue/src/linked_list_cc.cc	/^LinkedListQueue::LinkedListQueue() {}$/;"	f	class:LinkedListQueue
+LinkedListQueue	LabExam/queue/src/linked_list_queue.h	/^class LinkedListQueue : public Queue {$/;"	c
 LinkedListQueue	queue/linked_list_queue.h	/^    LinkedListQueue(int maxSize) {};$/;"	f	class:LinkedListQueue
 LinkedListQueue	queue/linked_list_queue.h	/^class LinkedListQueue : public Queue {$/;"	c
+LinkedListStack	LabExam/stack/src/stack.h	/^   LinkedListStack() {}$/;"	f	class:LinkedListStack
+LinkedListStack	LabExam/stack/src/stack.h	/^class LinkedListStack : public Stack {$/;"	c
 LinkedListStack	stack/linked_list_stack.h	/^    LinkedListStack() {};$/;"	f	class:LinkedListStack
 LinkedListStack	stack/linked_list_stack.h	/^class LinkedListStack : public Stack {$/;"	c
+List	LabExam/LinkedList/include/linked_list.h	/^class List { $/;"	c
+List	LabExam/LinkedList/src/linked_list.cc	/^List::List() {$/;"	f	class:List
+Node	LabExam/LinkedList/include/linked_list.h	/^  Node() {}$/;"	f	class:Node
+Node	LabExam/LinkedList/include/linked_list.h	/^  Node(int data) : data(data), next(nullptr) {}$/;"	f	class:Node
+Node	LabExam/LinkedList/include/linked_list.h	/^class Node {$/;"	c
 Node	LinkedList/linked_list.h	/^  Node() {}$/;"	f	class:Node
 Node	LinkedList/linked_list.h	/^  Node(int info) : info(info), next(nullptr) {}$/;"	f	class:Node
 Node	LinkedList/linked_list.h	/^  Node(int info, Node * next) : info(info), next(next) {}$/;"	f	class:Node
 Node	LinkedList/linked_list.h	/^class Node {$/;"	c
 QUEUE_H	queue/queue.h	/^#define QUEUE_H$/;"	d
+Queue	LabExam/queue/include/linked_list.h	/^class Queue {$/;"	c
+Queue	LabExam/queue/include/linked_list_q.h	/^  Queue() {}$/;"	f	class:Queue
+Queue	LabExam/queue/include/linked_list_q.h	/^class Queue {$/;"	c
 Queue	LabExam/queue/include/queue.h	/^class Queue {$/;"	c
 Queue	LabExam/queue/src/circularqueue.cc	/^Queue::Queue(int maxSize) {$/;"	f	class:Queue
 Queue	LabExam/queue/src/queue.cc	/^Queue::Queue(int maxSize) {$/;"	f	class:Queue
 Queue	queue/queue.h	/^    Queue() {};$/;"	f	class:Queue
 Queue	queue/queue.h	/^class Queue {$/;"	c
 STACK_H	stack/stack.h	/^#define STACK_H$/;"	d
+Stack	LabExam/stack/include/array_ll.h	/^  Stack() {}$/;"	f	class:Stack
+Stack	LabExam/stack/include/array_ll.h	/^class Stack {$/;"	c
 Stack	stack/stack.h	/^    Stack() {};$/;"	f	class:Stack
 Stack	stack/stack.h	/^class Stack {$/;"	c
+TAIL	LabExam/LinkedList/include/linked_list.h	/^  Node * TAIL;$/;"	m	class:List	typeref:typename:Node *
 TAIL	LinkedList/linked_list.h	/^    Node * TAIL;$/;"	m	class:LinkedList	typeref:typename:Node *
+add	LabExam/LinkedList/src/linked_list.cc	/^bool List::add(int data, Node * predecessor) {$/;"	f	class:List	typeref:typename:bool
 add	LinkedList/linked_list.cpp	/^void LinkedList::add(int data, Node * predecessor) {$/;"	f	class:LinkedList	typeref:typename:void
 addBST	bst/bst.cc	/^bool BST::addBST(BST * newNode) { $/;"	f	class:BST	typeref:typename:bool
+addToHead	LabExam/LinkedList/src/linked_list.cc	/^bool List::addToHead(int data) {$/;"	f	class:List	typeref:typename:bool
 addToHead	LinkedList/linked_list.cpp	/^void LinkedList::addToHead(int data) {$/;"	f	class:LinkedList	typeref:typename:void
+addToTail	LabExam/LinkedList/src/linked_list.cc	/^bool List::addToTail(int data) {$/;"	f	class:List	typeref:typename:bool
 addToTail	LinkedList/linked_list.cpp	/^void LinkedList::addToTail(int data) {$/;"	f	class:LinkedList	typeref:typename:void
 bst	Recursion/binary_search_tree.rs	/^fn bst(arr: &[u32], target: u32, mut mid: usize) -> bool {$/;"	f
 count	Recursion/count.rs	/^fn count(arr: &[u32]) -> u32 {$/;"	f
+data	LabExam/LinkedList/include/linked_list.h	/^  int data;$/;"	m	class:Node	typeref:typename:int
 data	bst/bst.cc	/^    int data;$/;"	m	class:BST	typeref:typename:int	file:
 dequeue	LabExam/queue/src/circularqueue.cc	/^int Queue::dequeue() {$/;"	f	class:Queue	typeref:typename:int
+dequeue	LabExam/queue/src/linked_list_cc.cc	/^bool LinkedListQueue::dequeue() {$/;"	f	class:LinkedListQueue	typeref:typename:bool
 dequeue	LabExam/queue/src/queue.cc	/^int Queue::dequeue() {$/;"	f	class:Queue	typeref:typename:int
 dequeue	queue/array.cpp	/^int ArrayQueue::dequeue() {$/;"	f	class:ArrayQueue	typeref:typename:int
 dequeue	queue/linked_list_queue.cpp	/^int LinkedListQueue::dequeue() {$/;"	f	class:LinkedListQueue	typeref:typename:int
 enqueue	LabExam/queue/src/circularqueue.cc	/^int * Queue::enqueue(int data) {$/;"	f	class:Queue	typeref:typename:int *
+enqueue	LabExam/queue/src/linked_list_cc.cc	/^bool LinkedListQueue::enqueue(int data) {$/;"	f	class:LinkedListQueue	typeref:typename:bool
 enqueue	LabExam/queue/src/queue.cc	/^int * Queue::enqueue(int data) {$/;"	f	class:Queue	typeref:typename:int *
 enqueue	queue/array.cpp	/^bool ArrayQueue::enqueue(int data) {$/;"	f	class:ArrayQueue	typeref:typename:bool
 enqueue	queue/linked_list_queue.cpp	/^bool LinkedListQueue::enqueue(int data) {$/;"	f	class:LinkedListQueue	typeref:typename:bool
@@ -129,6 +151,7 @@ front	LabExam/queue/include/queue.h	/^  int front;$/;"	m	class:Queue	typeref:typ
 front	queue/array.h	/^    int front;$/;"	m	class:ArrayQueue	typeref:typename:int
 front	stack/array.h	/^    int front;$/;"	m	class:ArrayStack	typeref:typename:int
 front_element	LabExam/queue/src/circularqueue.cc	/^int Queue::front_element() {$/;"	f	class:Queue	typeref:typename:int
+front_element	LabExam/queue/src/linked_list_cc.cc	/^int LinkedListQueue::front_element() {$/;"	f	class:LinkedListQueue	typeref:typename:int
 front_element	LabExam/queue/src/queue.cc	/^int Queue::front_element() {$/;"	f	class:Queue	typeref:typename:int
 front_element	queue/array.cpp	/^int ArrayQueue::front_element() {$/;"	f	class:ArrayQueue	typeref:typename:int
 front_element	queue/linked_list_queue.cpp	/^int LinkedListQueue::front_element() {$/;"	f	class:LinkedListQueue	typeref:typename:int
@@ -137,9 +160,12 @@ get_tail	LinkedList/linked_list.cpp	/^int LinkedList::get_tail() {$/;"	f	class:L
 greet	Recursion/call_stack.rs	/^fn greet(name: String) {$/;"	f
 greet2	Recursion/call_stack.rs	/^fn greet2(name: String) {$/;"	f
 info	LinkedList/linked_list.h	/^    int info;$/;"	m	class:Node	typeref:typename:int
+isEmpty	LabExam/LinkedList/src/linked_list.cc	/^bool List::isEmpty() {$/;"	f	class:List	typeref:typename:bool
 isEmpty	LabExam/queue/src/circularqueue.cc	/^bool Queue::isEmpty() {$/;"	f	class:Queue	typeref:typename:bool
+isEmpty	LabExam/queue/src/linked_list_cc.cc	/^bool LinkedListQueue::isEmpty() {$/;"	f	class:LinkedListQueue	typeref:typename:bool
 isEmpty	LabExam/queue/src/queue.cc	/^bool Queue::isEmpty() {$/;"	f	class:Queue	typeref:typename:bool
 isEmpty	LabExam/stack/src/array.cc	/^bool ArrayStack::isEmpty() {$/;"	f	class:ArrayStack	typeref:typename:bool
+isEmpty	LabExam/stack/src/stack_ll.cc	/^bool LinkedListStack::isEmpty() {$/;"	f	class:LinkedListStack	typeref:typename:bool
 isEmpty	LinkedList/linked_list.cpp	/^bool LinkedList::isEmpty() {$/;"	f	class:LinkedList	typeref:typename:bool
 isEmpty	stack/array.cpp	/^bool ArrayStack::isEmpty() {$/;"	f	class:ArrayStack	typeref:typename:bool
 isEmpty	stack/linked_list_stack.cpp	/^bool LinkedListStack::isEmpty() {$/;"	f	class:LinkedListStack	typeref:typename:bool
@@ -150,12 +176,17 @@ isFull	stack/array.cpp	/^bool ArrayStack::isFull() {$/;"	f	class:ArrayStack	type
 is_empty	queue/array.cpp	/^bool ArrayQueue::is_empty() {$/;"	f	class:ArrayQueue	typeref:typename:bool
 is_empty	queue/linked_list_queue.cpp	/^bool LinkedListQueue::is_empty() {$/;"	f	class:LinkedListQueue	typeref:typename:bool
 is_full	queue/array.cpp	/^bool ArrayQueue::is_full() {$/;"	f	class:ArrayQueue	typeref:typename:bool
+l	LabExam/queue/src/linked_list_queue.h	/^    List l;$/;"	m	class:LinkedListQueue	typeref:typename:List
+l	LabExam/stack/src/stack.h	/^   List l;$/;"	m	class:LinkedListStack	typeref:typename:List
 l	queue/linked_list_queue.h	/^    LinkedList l;$/;"	m	class:LinkedListQueue	typeref:typename:LinkedList
 l	stack/linked_list_stack.h	/^    LinkedList l;$/;"	m	class:LinkedListStack	typeref:typename:LinkedList
 leftChild	bst/bst.cc	/^    BST * leftChild;$/;"	m	class:BST	typeref:typename:BST *	file:
-length	LabExam/stack/array.h	/^  int length;$/;"	m	class:ArrayStack	typeref:typename:int
+length	LabExam/stack/include/array.h	/^  int length;$/;"	m	class:ArrayStack	typeref:typename:int
+main	LabExam/LinkedList/src/main.cc	/^int main() {$/;"	f	typeref:typename:int
+main	LabExam/queue/src/ll.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/queue/src/main.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/stack/src/main.cc	/^int main() {$/;"	f	typeref:typename:int
+main	LabExam/stack/src/stack.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LinkedList/main.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	Recursion/binary_search_tree.rs	/^fn main() {$/;"	f
 main	Recursion/call_stack.rs	/^fn main() {$/;"	f
@@ -171,19 +202,24 @@ main	selection_sort/sort.cc	/^int main() {$/;"	f	typeref:typename:int
 main	stack/main.cpp	/^int main() {$/;"	f	typeref:typename:int
 max	Recursion/max.rs	/^fn max(arr: &[u32]) -> u32 {$/;"	f
 maxSize	LabExam/queue/include/queue.h	/^  int maxSize;$/;"	m	class:Queue	typeref:typename:int
-maxSize	LabExam/stack/array.h	/^  int maxSize;$/;"	m	class:ArrayStack	typeref:typename:int
+maxSize	LabExam/stack/include/array.h	/^  int maxSize;$/;"	m	class:ArrayStack	typeref:typename:int
 maxSize	queue/array.h	/^    int maxSize;$/;"	m	class:ArrayQueue	typeref:typename:int
 maxSize	stack/array.h	/^    int maxSize;$/;"	m	class:ArrayStack	typeref:typename:int
 mergeSort	merge_sort/sort.cc	/^int * mergeSort(int arr[], int size) {$/;"	f	typeref:typename:int *
+next	LabExam/LinkedList/include/linked_list.h	/^  Node * next;$/;"	m	class:Node	typeref:typename:Node *
 next	LinkedList/linked_list.h	/^    Node * next;$/;"	m	class:Node	typeref:typename:Node *
+oneNode	LabExam/LinkedList/src/linked_list.cc	/^bool List::oneNode() {$/;"	f	class:List	typeref:typename:bool
 peek	LabExam/stack/src/array.cc	/^int ArrayStack::peek() {$/;"	f	class:ArrayStack	typeref:typename:int
+peek	LabExam/stack/src/stack_ll.cc	/^int LinkedListStack::peek() {$/;"	f	class:LinkedListStack	typeref:typename:int
 pop	LabExam/stack/src/array.cc	/^int ArrayStack::pop() {$/;"	f	class:ArrayStack	typeref:typename:int
+pop	LabExam/stack/src/stack_ll.cc	/^bool LinkedListStack::pop() {$/;"	f	class:LinkedListStack	typeref:typename:bool
 pop	stack/array.cpp	/^int ArrayStack::pop() {$/;"	f	class:ArrayStack	typeref:typename:int
 pop	stack/linked_list_stack.cpp	/^int LinkedListStack::pop() {$/;"	f	class:LinkedListStack	typeref:typename:int
 print	insertion_sort/sort.cc	/^void print(int arr[], int size) {$/;"	f	typeref:typename:void
 print	selection_sort/sort.cc	/^void print(int arr[], int size) {$/;"	f	typeref:typename:void
 print_number	Recursion/recursion.rs	/^fn print_number(i: u32) {$/;"	f
 push	LabExam/stack/src/array.cc	/^int * ArrayStack::push(int data) {$/;"	f	class:ArrayStack	typeref:typename:int *
+push	LabExam/stack/src/stack_ll.cc	/^bool LinkedListStack::push(int data) {$/;"	f	class:LinkedListStack	typeref:typename:bool
 push	stack/array.cpp	/^bool ArrayStack::push(int data) {$/;"	f	class:ArrayStack	typeref:typename:bool
 push	stack/linked_list_stack.cpp	/^bool LinkedListStack::push(int data) {$/;"	f	class:LinkedListStack	typeref:typename:bool
 queue	LabExam/queue/include/queue.h	/^  int * queue;$/;"	m	class:Queue	typeref:typename:int *
@@ -191,34 +227,46 @@ queue	queue/array.h	/^    int *queue;$/;"	m	class:ArrayQueue	typeref:typename:in
 rear	LabExam/queue/include/queue.h	/^  int rear;$/;"	m	class:Queue	typeref:typename:int
 rear	queue/array.h	/^    int rear;$/;"	m	class:ArrayQueue	typeref:typename:int
 rear_element	LabExam/queue/src/circularqueue.cc	/^int Queue::rear_element() {$/;"	f	class:Queue	typeref:typename:int
+rear_element	LabExam/queue/src/linked_list_cc.cc	/^int LinkedListQueue::rear_element() {$/;"	f	class:LinkedListQueue	typeref:typename:int
 rear_element	LabExam/queue/src/queue.cc	/^int Queue::rear_element() {$/;"	f	class:Queue	typeref:typename:int
 rear_element	queue/array.cpp	/^int ArrayQueue::rear_element() {$/;"	f	class:ArrayQueue	typeref:typename:int
 rear_element	queue/linked_list_queue.cpp	/^int LinkedListQueue::rear_element() {$/;"	f	class:LinkedListQueue	typeref:typename:int
+remove	LabExam/LinkedList/src/linked_list.cc	/^bool List::remove(int data) {$/;"	f	class:List	typeref:typename:bool
 remove	LinkedList/linked_list.cpp	/^bool LinkedList::remove(int data) {$/;"	f	class:LinkedList	typeref:typename:bool
 removeBST	bst/bst.cc	/^bool BST::removeBST(BST * root, int key) {$/;"	f	class:BST	typeref:typename:bool
+removeFromHead	LabExam/LinkedList/src/linked_list.cc	/^bool List::removeFromHead() {$/;"	f	class:List	typeref:typename:bool
 removeFromHead	LinkedList/linked_list.cpp	/^int LinkedList::removeFromHead() {$/;"	f	class:LinkedList	typeref:typename:int
+removeFromTail	LabExam/LinkedList/src/linked_list.cc	/^bool List::removeFromTail() {$/;"	f	class:List	typeref:typename:bool
 removeFromTail	LinkedList/linked_list.cpp	/^bool LinkedList::removeFromTail() {$/;"	f	class:LinkedList	typeref:typename:bool
+retrieve	LabExam/LinkedList/src/linked_list.cc	/^bool List::retrieve(int data, Node * outputPointer) {$/;"	f	class:List	typeref:typename:bool
 retrieve	LinkedList/linked_list.cpp	/^void LinkedList::retrieve(int data, Node * dataOutPtr) {$/;"	f	class:LinkedList	typeref:typename:void
 rightChild	bst/bst.cc	/^    BST * rightChild;$/;"	m	class:BST	typeref:typename:BST *	file:
+search	LabExam/LinkedList/src/linked_list.cc	/^bool List::search(int data) {$/;"	f	class:List	typeref:typename:bool
 search	LinkedList/linked_list.cpp	/^bool LinkedList::search(int data) {$/;"	f	class:LinkedList	typeref:typename:bool
 selectionSort	selection_sort/sort.cc	/^void selectionSort(int arr[], int size) {$/;"	f	typeref:typename:void
 selection_sort	insertion_sort/sort.cc	/^void selection_sort(int arr[], int size) {$/;"	f	typeref:typename:void
-stack	LabExam/stack/array.h	/^  int *stack;$/;"	m	class:ArrayStack	typeref:typename:int *
+stack	LabExam/stack/include/array.h	/^  int *stack;$/;"	m	class:ArrayStack	typeref:typename:int *
 stack	stack/array.h	/^    int *stack; $/;"	m	class:ArrayStack	typeref:typename:int *
 sum	Recursion/sum.rs	/^fn sum(arr: &[i32]) -> i32 { $/;"	f
 swap	selection_sort/sort.cc	/^void swap(int *a, int *b) {$/;"	f	typeref:typename:void
-top	LabExam/stack/array.h	/^  int top;$/;"	m	class:ArrayStack	typeref:typename:int
+top	LabExam/stack/include/array.h	/^  int top;$/;"	m	class:ArrayStack	typeref:typename:int
 top	stack/array.cpp	/^int ArrayStack::top() {$/;"	f	class:ArrayStack	typeref:typename:int
 top	stack/linked_list_stack.cpp	/^int LinkedListStack::top() {$/;"	f	class:LinkedListStack	typeref:typename:int
+traverse	LabExam/LinkedList/src/linked_list.cc	/^void List::traverse() {$/;"	f	class:List	typeref:typename:void
 traverse	LinkedList/linked_list.cpp	/^void LinkedList::traverse() {$/;"	f	class:LinkedList	typeref:typename:void
 ~ArrayQueue	queue/array.cpp	/^ArrayQueue::~ArrayQueue() {$/;"	f	class:ArrayQueue
 ~ArrayStack	LabExam/stack/src/array.cc	/^ArrayStack::~ArrayStack() {$/;"	f	class:ArrayStack
 ~ArrayStack	stack/array.cpp	/^ArrayStack::~ArrayStack() {$/;"	f	class:ArrayStack
 ~LinkedList	LinkedList/linked_list.cpp	/^LinkedList::~LinkedList() {$/;"	f	class:LinkedList
+~LinkedListQueue	LabExam/queue/src/linked_list_cc.cc	/^LinkedListQueue::~LinkedListQueue() {}$/;"	f	class:LinkedListQueue
 ~LinkedListQueue	queue/linked_list_queue.h	/^    ~LinkedListQueue() {};$/;"	f	class:LinkedListQueue
+~LinkedListStack	LabExam/stack/src/stack.h	/^  ~LinkedListStack() {}$/;"	f	class:LinkedListStack
 ~LinkedListStack	stack/linked_list_stack.h	/^    ~LinkedListStack() {};$/;"	f	class:LinkedListStack
+~List	LabExam/LinkedList/src/linked_list.cc	/^List::~List() {$/;"	f	class:List
 ~Node	LinkedList/linked_list.h	/^  ~Node() {}$/;"	f	class:Node
+~Queue	LabExam/queue/include/linked_list_q.h	/^  ~Queue() {}$/;"	f	class:Queue
 ~Queue	LabExam/queue/src/circularqueue.cc	/^Queue::~Queue() {$/;"	f	class:Queue
 ~Queue	LabExam/queue/src/queue.cc	/^Queue::~Queue() {$/;"	f	class:Queue
 ~Queue	queue/queue.h	/^    ~Queue() {};$/;"	f	class:Queue
+~Stack	LabExam/stack/include/array_ll.h	/^  ~Stack() {}$/;"	f	class:Stack
 ~Stack	stack/stack.h	/^    ~Stack() {};$/;"	f	class:Stack
