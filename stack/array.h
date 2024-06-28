@@ -7,8 +7,7 @@ class ArrayStack : public Stack {
   private: 
     int maxSize;
     int front;
-    int *stack;
-    int length;
+    int *stack; 
 
   public:
     ArrayStack(int maxSize);

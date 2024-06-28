@@ -12,9 +12,12 @@ void swap(int *a, int *b) {
 }
 
 void selectionSort(int arr[], int size) {
+  cout << "size " << size;
   for (int i = 0; i < size - 1; i++) {
+    cout << "i = " << i << endl;
     int min_index = i;
     for (int j = i + 1; j < size; j++) {
+      cout << "j = " << j << endl;
       if (arr[min_index] > arr[j]) {
         min_index = j;
       }
