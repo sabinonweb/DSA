@@ -198,6 +198,7 @@ main	LabExam/DoublyLinkedList/src/main.cc	/^int main() {$/;"	f	typeref:typename:
 main	LabExam/InsertionSort/sort.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/LinkedList/src/main.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/MergeSort/sort.cc	/^int main() {$/;"	f	typeref:typename:int
+main	LabExam/QuickSort/sort.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/queue/src/ll.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/queue/src/main.cc	/^int main() {$/;"	f	typeref:typename:int
 main	LabExam/selection_sort/sort.cc	/^int main() {$/;"	f	typeref:typename:int
@@ -229,6 +230,7 @@ next	LabExam/DoublyLinkedList/include/dll.h	/^  Node * next;$/;"	m	class:Node	ty
 next	LabExam/LinkedList/include/linked_list.h	/^  Node * next;$/;"	m	class:Node	typeref:typename:Node *
 next	LinkedList/linked_list.h	/^    Node * next;$/;"	m	class:Node	typeref:typename:Node *
 oneNode	LabExam/LinkedList/src/linked_list.cc	/^bool List::oneNode() {$/;"	f	class:List	typeref:typename:bool
+partition	LabExam/QuickSort/sort.cc	/^int partition(int arr[], int low, int high) {$/;"	f	typeref:typename:int
 peek	LabExam/stack/src/array.cc	/^int ArrayStack::peek() {$/;"	f	class:ArrayStack	typeref:typename:int
 peek	LabExam/stack/src/stack_ll.cc	/^int LinkedListStack::peek() {$/;"	f	class:LinkedListStack	typeref:typename:int
 pop	LabExam/stack/src/array.cc	/^int ArrayStack::pop() {$/;"	f	class:ArrayStack	typeref:typename:int
@@ -245,6 +247,7 @@ push	stack/array.cpp	/^bool ArrayStack::push(int data) {$/;"	f	class:ArrayStack	
 push	stack/linked_list_stack.cpp	/^bool LinkedListStack::push(int data) {$/;"	f	class:LinkedListStack	typeref:typename:bool
 queue	LabExam/queue/include/queue.h	/^  int * queue;$/;"	m	class:Queue	typeref:typename:int *
 queue	queue/array.h	/^    int *queue;$/;"	m	class:ArrayQueue	typeref:typename:int *
+quicksort	LabExam/QuickSort/sort.cc	/^void quicksort(int arr[], int low, int high) {$/;"	f	typeref:typename:void
 rear	LabExam/queue/include/queue.h	/^  int rear;$/;"	m	class:Queue	typeref:typename:int
 rear	queue/array.h	/^    int rear;$/;"	m	class:ArrayQueue	typeref:typename:int
 rear_element	LabExam/queue/src/circularqueue.cc	/^int Queue::rear_element() {$/;"	f	class:Queue	typeref:typename:int
