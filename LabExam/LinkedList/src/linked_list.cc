@@ -104,7 +104,7 @@ bool List::removeFromTail() {
       Node * nodeToBeRemoved = this->TAIL;
       this->HEAD = nullptr;
       this->TAIL = nullptr;
-      std::cout << "New node removed tail first ";
+      std::cout << "New node removed tail first\n";
       delete nodeToBeRemoved;
       return true;
     }
@@ -193,6 +193,7 @@ bool List::retrieve(int data, Node * outputPointer) {
 }
 
 void List::traverse() {
+  std::cout << "called\n";
   if (isEmpty()) {
     std::cout << "List is empty!\n";
   } else {
