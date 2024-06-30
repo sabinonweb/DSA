@@ -21,7 +21,7 @@ int partition(int arr[], int low, int high) {
       i++;
     }
 
-    if (i < j) {
+  if (i < j) {
       swap(arr[i], arr[j]);
     } 
   }
@@ -43,9 +43,11 @@ int main() {
 
   quicksort(arr, 0, 9);
   
+  std::cout << "[";
   for (int i = 0; i < 10; i++) {
-    std::cout << "Element: " << arr[i] << "\n";
+    std::cout << arr[i] << ", ";
   }
+  std::cout << "]\n";
 }
 
 
